@@ -1230,67 +1230,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="austriamicrosystems">
-<description>austriamicrosystems&lt;p&gt;
-Analog ICs&lt;p&gt;</description>
-<packages>
-<package name="TSOP14">
-<wire x1="-2.5" y1="2.2" x2="2.5" y2="2.2" width="0.2032" layer="51"/>
-<wire x1="2.5" y1="2.2" x2="2.5" y2="-2.2" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="-2.2" x2="-2.5" y2="-2.2" width="0.2032" layer="51"/>
-<wire x1="-2.5" y1="-2.2" x2="-2.5" y2="2.2" width="0.2032" layer="21"/>
-<circle x="-1.7165125" y="-1.393265625" radius="0.39" width="0.2032" layer="21"/>
-<smd name="1" x="-2" y="-3" dx="0.46" dy="1.43" layer="1"/>
-<smd name="2" x="-1.35" y="-3" dx="0.46" dy="1.43" layer="1"/>
-<smd name="3" x="-0.7" y="-3" dx="0.46" dy="1.43" layer="1"/>
-<smd name="4" x="-0.05" y="-3" dx="0.46" dy="1.43" layer="1"/>
-<smd name="5" x="0.6" y="-3" dx="0.46" dy="1.43" layer="1"/>
-<smd name="6" x="1.25" y="-3" dx="0.46" dy="1.43" layer="1"/>
-<smd name="7" x="1.9" y="-3" dx="0.46" dy="1.43" layer="1"/>
-<smd name="8" x="1.90431875" y="3.06541875" dx="0.46" dy="1.43" layer="1"/>
-<smd name="9" x="1.25431875" y="3.06541875" dx="0.46" dy="1.43" layer="1"/>
-<smd name="10" x="0.60431875" y="3.06541875" dx="0.46" dy="1.43" layer="1"/>
-<smd name="11" x="-0.04568125" y="3.06541875" dx="0.46" dy="1.43" layer="1"/>
-<smd name="12" x="-0.69568125" y="3.06541875" dx="0.46" dy="1.43" layer="1"/>
-<smd name="13" x="-1.34568125" y="3.06541875" dx="0.46" dy="1.43" layer="1"/>
-<smd name="14" x="-2" y="3.06541875" dx="0.46" dy="1.43" layer="1"/>
-<text x="-3.049665625" y="-3.01788125" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.3268625" y="-3.0716625" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="AS5048">
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
-<pin name="3V3" x="-12.7" y="0" length="middle"/>
-<pin name="5V" x="-12.7" y="5.08" length="middle"/>
-<pin name="PWM" x="15.24" y="2.54" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AS5048">
-<gates>
-<gate name="G$1" symbol="AS5048" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSOP14">
-<connects>
-<connect gate="G$1" pin="3V3" pad="12"/>
-<connect gate="G$1" pin="5V" pad="11"/>
-<connect gate="G$1" pin="GND" pad="13"/>
-<connect gate="G$1" pin="PWM" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-stewart">
 <description>&lt;b&gt;Bel Stewart Conector&lt;/b&gt;&lt;p&gt;
 www.stewartconnector.com&lt;br&gt;
@@ -2246,7 +2185,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C4" library="SparkFun-Passives" deviceset="CAP_POL" device="1206-KIT" value="10uF"/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
-<part name="U$1" library="austriamicrosystems" deviceset="AS5048" device=""/>
 <part name="X1" library="con-stewart" deviceset="SI-50170" device=""/>
 <part name="U$2" library="makesmith" deviceset="AS5145" device=""/>
 <part name="TP1" library="testpad" deviceset="TP" device="PAD1-17"/>
@@ -2265,7 +2203,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="C4" gate="G$1" x="22.86" y="22.86"/>
 <instance part="SUPPLY6" gate="1" x="12.7" y="27.94"/>
 <instance part="JP1" gate="G$1" x="63.5" y="58.42" rot="R270"/>
-<instance part="U$1" gate="G$1" x="66.04" y="25.4"/>
 <instance part="X1" gate="G$1" x="66.04" y="-7.62"/>
 <instance part="U$2" gate="G$1" x="-43.18" y="12.7"/>
 <instance part="TP1" gate="G$1" x="-38.1" y="63.5"/>
@@ -2287,24 +2224,19 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="17.78" y="17.78"/>
 </segment>
 <segment>
-<wire x1="53.34" y1="20.32" x2="50.8" y2="20.32" width="0.1524" layer="91"/>
-<label x="45.72" y="20.32" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="50.8" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
 <label x="60.96" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="TD-"/>
-<wire x1="55.88" y1="2.54" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
-<label x="48.26" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="-25.4" y1="60.96" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
 <label x="-25.4" y="55.88" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="NC"/>
+<wire x1="55.88" y1="-7.62" x2="53.34" y2="-7.62" width="0.1524" layer="91"/>
+<label x="48.26" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2314,24 +2246,24 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="SUPPLY6" gate="1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="53.34" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
-<label x="45.72" y="30.48" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="5V"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="50.8" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
 <label x="63.5" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="TD+"/>
-<wire x1="55.88" y1="7.62" x2="53.34" y2="7.62" width="0.1524" layer="91"/>
-<label x="48.26" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="-38.1" y1="60.96" x2="-38.1" y2="55.88" width="0.1524" layer="91"/>
 <label x="-38.1" y="55.88" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VDD5V"/>
+<wire x1="-17.78" y1="25.4" x2="-15.24" y2="25.4" width="0.1524" layer="91"/>
+<label x="-15.24" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="RD-"/>
+<wire x1="55.88" y1="-5.08" x2="53.34" y2="-5.08" width="0.1524" layer="91"/>
+<label x="48.26" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -2341,26 +2273,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="20.32" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="53.34" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
-<label x="45.72" y="25.4" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="3V3"/>
+<pinref part="U$2" gate="G$1" pin="VDD3V3"/>
+<wire x1="-17.78" y1="20.32" x2="-15.24" y2="20.32" width="0.1524" layer="91"/>
+<label x="-15.24" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM" class="0">
 <segment>
-<label x="83.82" y="27.94" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="PWM"/>
-<wire x1="81.28" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <label x="66.04" y="40.64" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="X1" gate="G$1" pin="TCT"/>
-<wire x1="55.88" y1="5.08" x2="53.34" y2="5.08" width="0.1524" layer="91"/>
-<label x="48.26" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="PWM"/>
@@ -2371,6 +2293,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="TP3" gate="G$1" pin="TP"/>
 <wire x1="-12.7" y1="60.96" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
 <label x="-12.7" y="55.88" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="C_GND"/>
+<wire x1="55.88" y1="-10.16" x2="53.34" y2="-10.16" width="0.1524" layer="91"/>
+<label x="48.26" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2398,14 +2325,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="-73.66" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="RD+"/>
-<wire x1="55.88" y1="0" x2="53.34" y2="0" width="0.1524" layer="91"/>
-<label x="45.72" y="0" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="TP4" gate="G$1" pin="TP"/>
 <wire x1="-2.54" y1="60.96" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
 <label x="-2.54" y="53.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="TCT"/>
+<wire x1="55.88" y1="5.08" x2="53.34" y2="5.08" width="0.1524" layer="91"/>
+<label x="45.72" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SIG_B" class="0">
@@ -2415,32 +2342,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="-73.66" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="RCT"/>
-<wire x1="55.88" y1="-2.54" x2="53.34" y2="-2.54" width="0.1524" layer="91"/>
-<label x="45.72" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="TP5" gate="G$1" pin="TP"/>
 <wire x1="5.08" y1="60.96" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
 <label x="5.08" y="53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
-</net>
-<net name="N$9" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="RD-"/>
-<wire x1="55.88" y1="-5.08" x2="53.34" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="NC"/>
-<wire x1="55.88" y1="-7.62" x2="53.34" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="C_GND"/>
-<wire x1="55.88" y1="-10.16" x2="53.34" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="TD+"/>
+<wire x1="55.88" y1="7.62" x2="53.34" y2="7.62" width="0.1524" layer="91"/>
+<label x="45.72" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
