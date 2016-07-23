@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2356,6 +2356,7 @@
 <hole x="40" y="10" drill="4.5"/>
 <dimension x1="10" y1="10" x2="40" y2="10" x3="25" y3="2.2" textsize="1.778" layer="22"/>
 <dimension x1="10" y1="10" x2="25" y2="44" x3="25.0444" y3="27" textsize="1.778" layer="22" dtype="vertical"/>
+<dimension x1="10" y1="10" x2="16.15" y2="44" x3="13.075" y3="20.4216" textsize="1.778" layer="22" dtype="horizontal"/>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
