@@ -2267,6 +2267,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="22.86" y1="25.4" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
 <label x="20.32" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VDD3V3"/>
+<wire x1="-17.78" y1="20.32" x2="-15.24" y2="20.32" width="0.1524" layer="91"/>
+<label x="-15.24" y="20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PWM" class="0">
 <segment>

@@ -2243,6 +2243,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-63.5" y1="-5.08" x2="-68.58" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-73.66" y="-5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="CSN"/>
+<wire x1="-17.78" y1="0" x2="-12.7" y2="0" width="0.1524" layer="91"/>
+<label x="-12.7" y="0" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -2303,12 +2308,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="X1" gate="G$1" pin="C_GND"/>
 <wire x1="55.88" y1="-10.16" x2="53.34" y2="-10.16" width="0.1524" layer="91"/>
 <label x="48.26" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="CSN"/>
-<wire x1="-17.78" y1="0" x2="-12.7" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
