@@ -2352,6 +2352,18 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="45.72" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="MODE_INDEX" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="MODE_INDEX"/>
+<wire x1="-63.5" y1="0" x2="-68.58" y2="0" width="0.1524" layer="91"/>
+<label x="-83.82" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="TD-"/>
+<wire x1="55.88" y1="2.54" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
+<label x="38.1" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
