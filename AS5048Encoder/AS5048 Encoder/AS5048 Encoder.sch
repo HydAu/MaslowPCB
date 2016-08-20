@@ -1555,6 +1555,8 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <sheets>
 <sheet>
 <plain>
+<text x="45.72" y="45.72" size="1.778" layer="97">To Do:
+Add cut outs for accessing lower screws without removing upper board</text>
 </plain>
 <instances>
 <instance part="GND8" gate="1" x="17.78" y="15.24"/>
@@ -1727,4 +1729,10 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

@@ -1581,6 +1581,7 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <segment>
 <label x="48.26" y="5.08" size="1.778" layer="95"/>
 <wire x1="55.88" y1="5.08" x2="53.34" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="TCT"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VSS"/>
@@ -1617,6 +1618,7 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <segment>
 <label x="48.26" y="7.62" size="1.778" layer="95"/>
 <wire x1="55.88" y1="7.62" x2="53.34" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="TD+"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
